@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(180deg, rgba(61,12,17,1) 26%, rgba(3,63,99,1) 100%);
+    height: 100vh; /*Não sei o que errei aqui para dar uma "imagem pequena" e com repetições, bg-repeat:no-repeat não resolve muito*/
+}
+
+#bg-color {
+    
+    color: #b5b682;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    text-align: center;
+}
+
+.calculadora {
+    position: absolute; /*Oculpa apenas espaço próprio*/
+    background-image: linear-gradient(180deg, rgba(191, 105, 0, 0.8) 26%, rgba(181,182,130,0.8) 100%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    padding: 10px;
+}
+    /*top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    Config que centraliza/alinha a div totalmente ao centro da página, com o transforme para fica em cima do eixo*/
+
+.button {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer; /*muda cursos quando posiciona em cima*/
+    background-color: #b5b682;
+    border: none;
+    border-radius: 15PX;
+    box-shadow: 5px 5px 3px 2px #3d0c11;
+    color: #3d0c11;
+    margin: 6px;
+}
+
+.button-fav {
+    background-color: #bf6900;
+}
+
+.button:hover {
+    background-color: #033f63;
+    color: #b5b682;
+}
+
+#resultado {
+    width: 224px;
+    overflow: hidden; /*Apenas gambiarra pra ocultar nuúmero excendente, ou seja, vai calcular mesmo assim, ERRO*/
+    height: 43px;
+    margin: 10px;
+    padding: 5px;
+    background: #b5b682;
+    border-radius: 15px;
+    box-shadow: 5px 5px 3px 2px #3d0c11;
+    font-size: 25px;
+    color: #3d0c11;
+    text-align: right;
+}
+
+#resultado:hover {
+    background-color: #bf6900;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    font-size: 80px;
+}

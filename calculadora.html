@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn.pixabay.com/photo/2022/07/05/09/19/mother-7302669_960_720.jpg">
+    <link rel="stylesheet" type="text/css" href="assents/style/style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+
+<!--VIEW WINDOW AND LOGO-->
+<div id="bg-color">
+<h1>Elis Mattosinho</h1>
+    <div class="calculadora">
+    <h2>Calculator ChMTT</h2>
+        <p id="resultado" title="As emoções não expressas nunca morrem. Elas são enterradas vivas e saem de piores formas mais tarde. - Sigmund Freud. Calcule os problemas, resolva-os e reset tudo.
+        "></p>
+
+
+    <!--BUTTONS IN TABLE-->
+    <table>
+
+    <!--FIRST LINE-->
+    <tr>
+        <td><button class="button button-fav" onclick="clean()">C</button></td>
+        <td><button class="button button-fav" onclick="back('')">&lt;</button></td>
+        <td><button class="button button-fav" onclick="insert('/')">&divide;</button></td>
+        <td><button class="button button-fav" onclick="insert('*')">&times;</button></td>
+    </tr>
+
+    <!--SECOND LINE-->
+    <tr>
+        <td><button class="button" onclick="insert('7')">7</button></td>
+        <td><button class="button" onclick="insert('8')">8</button></td>
+        <td><button class="button" onclick="insert('9')">9</button></td>
+        <td><button onclick="insert('-')" class="button button-fav">&minus;</button></td>
+    </tr>
+
+
+    <!--THIRD LINE-->
+    <tr>
+        <td><button class="button" onclick="insert('4')">4</button></td>
+        <td><button class="button" onclick="insert('5')">5</button></td>
+        <td><button class="button" onclick="insert('6')">6</button></td>
+        <td><button onclick="insert('&plus;')" class="button button-fav">&plus;</button></td>
+    </tr>
+
+    <!--FOURTH LINE-->
+    <tr>
+        <td><button class="button" onclick="insert('1')">1</button></td>
+        <td><button class="button" onclick="insert('2')">2</button></td>
+        <td><button class="button" onclick="insert('3')">3</button></td>
+        <td rowspan="2"><button onclick="calcular('')" class="button button-fav" style="height: 109px;">&equals;</button></td>
+    </tr>
+
+    <tr>
+        <td colspan="2"><button class="button" onclick="insert('0')" style="width: 109px;">0</button></td>
+        <td><button onclick="insert('&period;')" class="button button-fav">&period;</button></td>
+    </tr>
+    </table>
+    </div>
+</div>
+<script type="text/javascript" src="assents/js/script.js"></script>
+</body>
+</html>
